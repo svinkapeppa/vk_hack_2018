@@ -5,5 +5,4 @@ from app.users.models import UserData
 
 @admin.register(UserData)
 class UserDataAdmin(admin.ModelAdmin):
-    list_display = ['vk_id', 'experience', 'coins']
-    search_fields = ['vk_id']
+    list_display = ['vk_id', 'first_name', 'last_name', 'level', 'experience', 'coins', 'donated']
