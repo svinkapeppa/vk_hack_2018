@@ -17,7 +17,7 @@ services:
     env_file:
       - ./compose/.env
     ports:
-      - "8000:8000"
+      - "1681:1681"
     command: ../start
 
   postgres:
