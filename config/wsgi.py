@@ -1,6 +1,3 @@
-"""
-WSGI config for app project.
-"""
 import os
 import sys
 
