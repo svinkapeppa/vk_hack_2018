@@ -11,4 +11,4 @@ class OrderingSerializer(serializers.Serializer):
 class UserDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserData
-        fields = ('vk_id', 'first_name', 'last_name', 'level', 'experience', 'coins', 'donated')
+        fields = ('vk_id', 'photo', 'first_name', 'last_name', 'level', 'experience', 'coins', 'donated')

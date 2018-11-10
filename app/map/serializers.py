@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from app.utils.geo_fields import PointField
+from app.utils.fields import PointField
 from .models import PetPoint
 
 
