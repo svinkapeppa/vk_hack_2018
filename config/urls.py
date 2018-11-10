@@ -5,10 +5,12 @@ from django.urls import include
 
 from app.users.views import user_urls
 from app.map.views import map_urls
+from app.pets.views import pets_urls
 
 api_urls = [
     url(r'^users/', include(user_urls)),
     url(r'^map/', include(map_urls)),
+    url(r'^pets/', include(pets_urls)),
 ]
 
 urlpatterns = [

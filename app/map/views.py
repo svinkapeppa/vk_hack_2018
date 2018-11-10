@@ -2,7 +2,7 @@ from rest_framework import mixins
 from rest_framework.routers import DefaultRouter
 from rest_framework.viewsets import GenericViewSet
 
-from app.map.filters import PetPointFilter
+from .filters import PetPointFilter
 from .models import PetPoint
 from .serializers import PetPointSerializer
 
