@@ -73,3 +73,9 @@ django-ckeditor~=5.6
 
 # runserver_plus
 Werkzeug==0.12
+
+# ML part
+numpy
+keras
+tensorflow
+scipy

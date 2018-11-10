@@ -36,11 +36,22 @@ This application provides you with models, views, etc. for working with animal s
 * `name` - name of the pet
 * `type` - one of the pet types (see [constants](app/map/constants.py) for better understanding)
 * `photo` - photo of the pet (see [this](app/utils/fields.py) for better understanding)
+* `age` - age of the pet
+* `info` - any additional information, that can be useful
 
-API provides one wat of communicating:
-1. `/api/map/map/` accepts `GET` requests and designed to list and retrieves `PetPoint` objects;
+API provides two ways of communicating:
+1. `/api/pets/pets/` accepts `GET` requests and designed to list and retrieves `PetPoint` objects;
 in order to retrieve some particular object specify its `{{id}}`;
 also it is possible to filter results by `type`
+2. `/api/pets/similar/` displays form, which gets picture and give back vector of cosine distances to pictures,
+stored in the database
+
+#### FakePet
+
+`FakePet` contains following field:
+* `photo` - photo of the pet (see [this](app/utils/fields.py) for better understanding)
+
+This model is used to store pictures of pets uploaded by users.
 
 ### Users
 
