@@ -22,20 +22,23 @@ DJANGO_APPS = [
     'django.contrib.admin',
     'django_admin_json_editor',
     'import_export',
+    'mapwidgets',
 ]
 
 THIRD_PARTY_APPS = [
     'crispy_forms',
+    'rest_framework_filters',
+    'django_filters',
     'rest_framework',
     'rest_framework_swagger',
     'django_extensions',
-    'django_filters',
     'storages',
     'django.contrib.gis',
 ]
 
 LOCAL_APPS = [
-    'app.users'
+    'app.users',
+    'app.map',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -181,7 +184,9 @@ CELERY_ALWAYS_EAGER = True
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'DEFAULT_FILTER_BACKENDS': ['rest_framework_filters.backends.RestFrameworkFilterBackend'],
+    'DEFAULT_FILTER_BACKENDS': [
+        'rest_framework_filters.backends.RestFrameworkFilterBackend',
+    ],
     'PAGE_SIZE': 15
 }
 
